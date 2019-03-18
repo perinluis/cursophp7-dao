@@ -33,11 +33,30 @@ $search = Usuario::search("i");
 echo json_encode($search);
 */
 
+//SELECT
 //Carrega a lista de usuario com autenticação
-
+/*
 $usuario = new Usuario();
 
-$usuario->login("Luis", "123456");
+$usuario->login("Luis", "1234567");
+
+echo $usuario;
+*/
+/*
+//INSERT
+$aluno = new Usuario("Fernando", "987654");
+
+$aluno->insert();
+
+echo $aluno;
+*/
+
+//UPDATE
+$usuario = new Usuario();
+
+$usuario->loadById(4);
+
+$usuario->update("Rogerio", "041090");
 
 echo $usuario;
 

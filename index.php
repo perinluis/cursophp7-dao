@@ -50,6 +50,7 @@ $aluno->insert();
 
 echo $aluno;
 */
+/*
 
 //UPDATE
 $usuario = new Usuario();
@@ -59,5 +60,13 @@ $usuario->loadById(4);
 $usuario->update("Rogerio", "041090");
 
 echo $usuario;
+*/
 
+//DELETE
+
+$usuario = new Usuario();
+
+$usuario->loadById(6);
+
+$usuario->delete();
  ?>
